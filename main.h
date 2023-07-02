@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 #define UNUSED(x) (void)(x)
-#define BUFF_size 1024
+#define BUFF_SIZE 1024
 
 /* FLAGS */
 #define F_MINUS 1
@@ -64,7 +64,7 @@ int print_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_hexadecimal(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int print_hexa_upper(vaz_list types, char buffer[],
+int print_hexa_upper(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 int print_hexa(va_list types, char map_to[],
@@ -81,7 +81,7 @@ int print_pointer(va_list types, char buffer[],
 /*Functions to handle other specifiers */
 int get_flags(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
-int gat_precision(const char *format, int *i, va_list list);
+int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
 
 /*Function to print string in reverse*/
