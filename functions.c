@@ -127,7 +127,7 @@ int print_int(va_list types, char buffer[],
 	if (n < 0)
 	{
 		num = (unsigned long int)((-1) * n);
-		is _negative = 1;
+		is_negative = 1;
 	}
 
 	while (num > 0)
